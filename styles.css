@@ -45,6 +45,12 @@
   height: 200px;
 }
 
+.handle__milliSecond {
+    width: 1px;
+  height: 120px;
+  transform: rotate(180deg);
+}
+
 .number:nth-of-type(1) {
   transform: rotate(30deg);
 }
