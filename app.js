@@ -21,9 +21,11 @@ function setHandles() {
 
   const secondDegrees = (seconds + milliseconds / 1000) * 6;
 
+  const millisecondsAngle = milliseconds * 0.36;
+
   hourHandle.style.transform = `translateX(-50%) rotate(${hoursAngle}deg)`;
   minuteHandle.style.transform = `translateX(-50%) rotate(${minutesAngle}deg)`;
   secondHandle.style.transform = `translateX(-50%) rotate(${secondDegrees}deg)`;
-  millisecondHandle.style.transform = `translateX(-50%) rotate(${milliseconds}deg)`;
+  millisecondHandle.style.transform = `translateX(-50%) rotate(${millisecondsAngle}deg)`;;
   requestAnimationFrame(setHandles);
 }
